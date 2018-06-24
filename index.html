@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>孙强 | Java后端工程师</title>
+<style type="text/css">
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+audio:not([controls]) {
+  display: none;
+}
+[hidden] {
+  display: none;
+}
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+body {
+  margin: 0;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover,
+a:active {
+  outline: 0;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+blockquote {
+  margin: 1em 40px;
+}
+dfn {
+  font-style: italic;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+p,
+pre {
+  margin: 1em 0;
+}
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+q {
+  quotes: none;
+}
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+small {
+  font-size: 75%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0;
+}
+dd {
+  margin: 0 0 0 40px;
+}
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
+}
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 0;
+}
+form {
+  margin: 0;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  *margin-left: -7px;
+}
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+button,
+input {
+  line-height: normal;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+  *overflow: visible;
+}
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+  *height: 13px;
+  *width: 13px;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body.pdf {
+  color: black;
+}
+body.pdf a {
+  text-decoration: none;
+  color: black;
+}
+body.pdf .container {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0;
+  background: none;
+  border: none;
+  border-width: 8px 0 2px 0;
+  text-align: left;
+}
+body.pdf .resume {
+  position: relative;
+  padding: 40px 80px;
+}
+body.pdf a[href$='.pdf'] {
+  display: none;
+}
+body.pdf h1 {
+  letter-spacing: 0;
+  margin-top: 0;
+  font-size: 48px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+body.pdf h2 {
+  letter-spacing: 0;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: normal;
+}
+body.pdf h3 {
+  float: left;
+  width: 16%;
+  font-style: normal;
+}
+body.pdf h3+p {
+  float: left;
+  width: 78%;
+}
+body.pdf blockquote {
+  top: 40px;
+  right: 50px;
+  position: absolute;
+}
+body.pdf ul li {
+  width: 33%;
+  float: left;
+}
+body.pdf ul dl {
+  margin: 0;
+  padding: 0.3em 0 0;
+}
+body.pdf ul dl dt {
+  font-size: 122%;
+  font-weight: normal;
+  margin: 0 0 .75em;
+}
+body.pdf ul dl dd {
+  padding: 0 2em 0 0;
+}
+body.pdf ol {
+  float: left;
+  width: 79%;
+  margin: .7em 0 0;
+}
+body.pdf ol li {
+  width: 33%;
+  margin: 0;
+}
+body.pdf ol li:nth-child(3n) {
+  width: 34%;
+}
+body.pdf ol li:nth-child(1),
+body.pdf ol li:nth-child(2),
+body.pdf ol li:nth-child(3) {
+  border-top: none;
+}
+body.pdf dl {
+  margin: .7em 0 0;
+  page-break-inside: avoid !important;
+  display: block;
+  width: 79%;
+  float: left;
+}
+body.pdf dl strong {
+  float: right;
+  margin-top: -2em;
+}
+body.pdf dl em {
+  font-size: 130%;
+  font-style: normal;
+}
+
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+  content: ".";
+}
+body {
+  font-family: 'Hoefler Text', Times New Roman, Times, serif;
+  color: #444;
+}
+h1,
+h2,
+h3,
+h4,
+ul dl dt {
+  font-family: Futura, "Century Gothic", AppleGothic, sans-serif;
+}
+.container {
+  margin: 0 auto;
+  padding: 0;
+  background: whiteSmoke;
+  border: solid #666;
+  border-width: 8px 0 2px 0;
+  text-align: left;
+}
+.resume {
+  position: relative;
+  padding: 10px 20px;
+}
+a {
+  color: #990003;
+}
+a[href$='.pdf'] {
+  display: inline-block;
+  background: #666;
+  color: white;
+  padding: 6px 12px;
+  margin-bottom: 6px;
+  text-decoration: none;
+}
+blockquote {
+  margin: 0;
+  padding: 0;
+  line-height: 1.4em;
+}
+hr {
+  display: block;
+  position: relative;
+  padding: 0;
+  margin: 18px auto;
+  width: 100%;
+  clear: both;
+  border: none;
+  border-top: 1px solid #CCC;
+  font-size: 1px;
+  line-height: 0;
+  overflow: visible;
+  page-break-after: avoid;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  letter-spacing: -1px;
+  font-weight: normal;
+}
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-style: italic;
+  letter-spacing: -1px;
+  font-weight: normal;
+}
+h3 {
+  margin: 0px 20px;
+  padding: 0 0 .5em;
+  font-size: 150%;
+  font-style: italic;
+  font-weight: normal;
+}
+h3+p {
+  margin: .6em 0 16px;
+  padding: 0;
+  display: block;
+  font-size: 104%;
+  line-height: 24px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: table;
+}
+ul li {
+  margin: 0;
+  padding: 0;
+}
+ul dl {
+  margin: .3em 0 0;
+  padding: 0;
+  width: 100%;
+}
+ul dl dt {
+  font-size: 100%;
+}
+ul dl dd {
+  margin: 0 0 1em;
+  padding: 0 2em 0 0;
+  font-size: .8em;
+  line-height: 1.5em;
+}
+ol {
+  margin: 0;
+  padding: 0 0 .75em;
+  width: 84%;
+  display: inline-block;
+}
+ol li {
+  margin: 0 0 0 1em;
+  padding: 0;
+  border-top: 1px solid #CCCCCC;
+  width: 100%;
+  float: left;
+  list-style: none;
+  line-height: 24px;
+  font-size: 14px;
+}
+ol li:nth-child(1) {
+  border-top: none;
+}
+dl {
+  display: inline-block;
+  width: 78%;
+  margin: 0;
+  padding: 0;
+}
+dl dt {
+  margin: 0;
+  padding: 0;
+  font-size: 140%;
+}
+dl dd {
+  margin: 0 0 1.5em;
+  padding: 0;
+  font-size: 80%;
+  line-height: 1.4em;
+}
+dl strong {
+  display: block;
+}
+dl em {
+  display: block;
+  font-size: 110%;
+  margin: .15em 0 .5em;
+  font-style: bold;
+}
+#footer {
+  display: none;
+}
+#footer + p {
+  width: 100%;
+  font-size: 11px;
+  text-align: center;
+}
+
+@media screen and (min-width: 37.5em) {
+  body {
+    padding: 2em 0;
+  }
+  blockquote {
+    top: 10px;
+    right: 50px;
+    position: absolute;
+  }
+  h1 {
+    margin-top: .5em;
+  }
+  ol {
+    margin: 0 0 0 1em;
+  }
+  ol li {
+    width: 50%;
+    margin: 0;
+  }
+  ol li:nth-child(1),
+  ol li:nth-child(2) {
+    border-top: none;
+  }
+}
+@media screen and (min-width: 57em) {
+  .container {
+    width: 912px;
+  }
+  .resume {
+    position: relative;
+    padding: 40px 50px;
+  }
+  blockquote {
+    top: 40px;
+    right: 50px;
+    position: absolute;
+  }
+  h1 {
+    margin-top: 0;
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: normal;
+  }
+  h2 {
+    text-transform: uppercase;
+    font-style: italic;
+    letter-spacing: 2px;
+    font-weight: normal;
+  }
+  h3 {
+    float: left;
+    width: 16%;
+  }
+  h3+p {
+    float: left;
+    width: 78%;
+  }
+  ul li {
+    width: 33%;
+    float: left;
+  }
+  ul dl dt {
+    font-size: 122%;
+    font-weight: normal;
+    margin-bottom: .75em;
+  }
+  ul dl dd {
+    padding: 0 2em 0 0;
+  }
+  ol {
+    float: left;
+    width: 79%;
+    margin: .6em 0 0;
+  }
+  ol li {
+    width: 33%;
+    margin: 0;
+  }
+  ol li:nth-child(3n) {
+    width: 34%;
+  }
+  ol li:nth-child(1),
+  ol li:nth-child(2),
+  ol li:nth-child(3) {
+    border-top: none;
+  }
+  dl {
+    margin: .5em 0 0;
+  }
+  dl strong {
+    float: right;
+    margin-top: -2em;
+  }
+  dl em {
+    font-size: 130%;
+    font-style: normal;
+  }
+}
+
+</style>
+</head>
+
+<body class="">
+
+<div class="container">
+    <div class="resume">
+        <h1>孙强</h1>
+
+<h2>Java后端工程师</h2>
+
+<blockquote>
+  <p><a href="resume.pdf">Download PDF</a><br />
+  <a href="bravesq@163.com">bravesq@163.com</a><br />
+  15712363915</p>
+</blockquote>
+
+<hr />
+
+<h3>个人信息</h3>
+
+<ol>
+<li>毕业院校：河南理工大学</li>
+<li>专业：测绘工程</li>
+<li>学历：本科</li>
+<li>毕业时间：2017年6月</li>
+<li>英语：六级</li>
+</ol>
+
+<hr />
+
+<h3>项目经验</h3>
+
+<dl>
+<dt>微信点餐系统</dt>
+<dd><em>个人项目</em>
+<strong>2018.02-2018.06</strong>
+项目前后端分离，前端是由vue.js构建的一个webapp，运行于微信公众号。<br />
+数据库使用MySQL,后端使用的技术是Spring Boot+Spring Data JPA。前后端之间通过RESTful风格的接口相连。<br />
+后端还使用到了微信网页授权、微信支付，微信扫码登录等许多微信相关的技术。<br />
+项目使用了redis缓存对前端请求的Json数据进行缓存。<br />
+项目支持分布式，在用户登录方面，使用Redis实现Session的集中管理。<br />
+项目收获：掌握了一个中小型的企业项目从零到一的整个开发过程，各种开发工具的使用，微信公众平台开发文档的使用以及微信开发接口的使用，Spring Boot、Redis、分布式系统的一些特征等新知识的实践，一些开源项目、SDK的使用。<br />
+项目地址：<a href="https://github.com/sqmax/springboot-project">https://github.com/sqmax/springboot-project</a></dd>
+
+<dt>车辆管理</dt>
+<dd><em>公司项目</em>
+<strong>2018.05-2018.08</strong>
+职位：后端PG   &nbsp;&nbsp;项目组：10人<br />
+从日本富士通外包来的车辆管理项目。
+数据库使用的是oracle，后端使用到的技术是Spring Batch和MyBatis。
+项目收获：对一个大型的系统，进行团队合作开发，项目使用Git作为版本管理系统，熟练地掌握了使用Git进行团队合作。</dd>
+
+<dt>基于Android的测量程序设计</dt>
+<dd><em>毕业设计项目</em>
+<strong>2017.03-2017.06</strong>
+毕业设计项目。用于导线测量和水准测量内业计算的Android应用，已发布到腾讯应用商店。获得校级优秀论文。<br />
+项目地址：<a href="https://github.com/sqmax/SurvingAndMapping">https://github.com/sqmax/SurvingAndMapping</a></dd>
+</dl>
+
+<hr />
+
+<h3 id="experience">工作经历</h3>
+
+<dl>
+<dt>大连远东计算机系统有限公司</dt>
+<dd><em>职位：PG</em>
+<strong>2017.07-2018.09</strong>
+主要进行对日项目的开发，根据项目组长分配的任务，根据式样书，进行业务功能的编码、单元测试、测试结果文档的编写。</dd>
+</dl>
+
+<hr />
+
+<h3>关于我</h3>
+
+<dl>
+<dt>个人</dt>
+<dd>
+* 良好的英语阅读能力，获得过六级阅读220+的成绩，对英语也一值保持着感兴趣。<br />
+* 良好的自学能力，从大三暑假开始自学计算机课程如离散数学、C语言、数据结构，自学Java Web技术，毕业后的第一份工作也是Java开发。
+* 能够从编码的成就感，热爱开源，喜欢在Github搜寻一些开源项目，阅读优秀的代码。<br />
+* 对前端也有一些兴趣，喜欢一些简洁优雅的网站。<br />
+* 良好的运动习惯和抗压能力，喜欢长跑，多次参见校运动会长跑比赛和冬季长跑比赛，并一直保持者慢跑的习惯。</dd>
+</dl>
+
+<hr />
+
+<h3>技能</h3>
+
+<ol>
+<li>Java</li>
+<li>C语言</li>
+<li>基本数据结构和算法</li>
+<li>MySQL</li>
+<li>Git</li>
+<li>Linux</li>
+<li>Redis</li>
+<li>Servlet/JSP</li>
+<li>主流的Java后框架</li>
+<li>Maven、Eclipse、IDEA、Tomcat、Nginx等工具的使用经验</li>
+</ol>
+
+<hr />
+
+<h3>正学习的开源项目</h3>
+
+<ul>
+<li><dl>
+<dt><a href="https://github.com/sqmax/best-pay-sdk">best-pay-sdk</a></dt>
+<dd>对微信接口封装，用于微信支付的项目，来源于我的慕课网老师，项目还在起步阶段,代码量不是很多，正在试着阅读。</dd>
+</dl></li>
+<li><dl>
+<dt><a href="https://gitee.com/huangyong/smart-framework">smart-framework</a></dt>
+<dd>它是一款轻量级 Java Web 框架，作者还由一本书籍《构架探险》。Spring源码复杂，我希望能够从先这个项目入去学习</dd>
+</dl></li>
+<li><dl>
+<dt><a href="https://github.com/sqmax/webmagic">webmagic</a></dt>
+<dd>webmagic是一个开源的Java垂直爬虫框架。作者的风格以及他的几个仓库我很喜欢。所以这个开源项目也在在我的学习计划之内。</dd>
+</dl></li>
+</ul>
+
+<hr />
+
+<h3 id="footer">Footer</h3>
+
+<p>SqMax &#8212; <a href="https://github.com/sqmax">https://github.com/sqmax</a></p>
+
+<hr />
+
+    </div>
+</div>
+
+</body>
+</html>
