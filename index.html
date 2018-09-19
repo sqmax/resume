@@ -634,8 +634,8 @@ dl em {
 <h2>Java后端工程师</h2>
 
 <blockquote>
-  <p><a href="http://p91462zt8.bkt.clouddn.com/Java%E5%BC%80%E5%8F%91%E5%B7%A5%E7%A8%8B%E5%B8%88_%E5%AD%99%E5%BC%BA.pdf">Download PDF</a><br />
-  <a href="http://p91462zt8.bkt.clouddn.com/%E7%9B%B8%E5%85%B3%E8%AF%81%E4%B9%A6.png">我的证书</a><br />
+  <p><a href="http://p91462zt8.bkt.clouddn.com/Java%E5%B7%A5%E7%A8%8B%E5%B8%88-%E5%AD%99%E5%BC%BA.pdf">Download PDF</a><br />
+  <a href="https://www.processon.com/view/link/5b9b47ece4b075b9fe46d123">我的证书</a><br />
   <a href="bravesq@163.com">bravesq@163.com</a><br />
   <strong>15712363915</strong><br/>
   </p>
@@ -661,41 +661,38 @@ dl em {
 
 <dl>
 <dt>微信点餐系统</dt>
-<dd><em>个人项目</em>
+<dd><em>个人学习项目</em>
 <strong>2018.02 - 至今</strong>
-这是一个前后端完全分离的项目，前后端之间通过 RESTful 风格的接口相连。<br /><br/>
+1、项目前后端完全分离，前后端之间通过 RESTful 风格的接口相连。<br /><br/>
 
-项目的核心集中在后端，使用 Spring Boot+Spring Data JPA 进行开发，使用 MySQL 数据库。
-业务上实现了买家的下单支付退款等操作（包括微信网页授权、微信支付退款、微信扫码登陆、微信
-模板消息推送）；卖家对商品的管理操作（包括完结订单、看订单详情，新增商品、类别等各种操作）。<br/><br/>
+2、项目使用 Spring Boot 框架，数据访问层使用的是 Spring Data JPA，使用 MySQL 数据库。。<br/><br/>
 
-项目从角色上可分为买家端和卖家端，买家端是手机端，是由 Vue.js 构建的 WebApp，运行于微
-信公众号。<br/><br/>
+3、对微信网页授权，微信支付，微信扫码登陆，微信模板消息推送功能进行开发。<br/><br/>
 
-卖家端位于 PC 端，卖家端的前台是一个商品管理系统，是由 freemarker+jquery+Bootstrap 快
-速构建。<br/><br/>
+4、买家端和卖家端使用 WebSocket 进行通信，买家端下单成功，服务器就会向卖家管理系统推送
+消息，并播放音乐。<br/><br/>
 
-买家端和卖家端使用 WebSocket 进行通信，买家端下单成功，卖家端就会收到通知，并播放音
-乐。<br/><br/>
+5、使用 Redis 缓存，Redis 对后端返回的 JSON 数据进行缓存，提高了相应速度。<br/><br/>
 
-项目支持分布式，在登陆方面，使用分布式 Session 对卖家的登陆信息进行集中管理；
-针对一个商品秒杀的案例，使用 Redis 分布式锁来实现，大大提高了高并发情况下系统的处理速度；
-并用 Redis 对返回给前端的 JSON 数据进行缓存，提高了响应速度。<br/><br/>
+6、业务上实现了买家的下单、支付、退款等操作，卖家对商品的完结订单、查看订单详情，新增
+商品、类别等操作。<br/><br/>
+
+7、项目支持分布式，在登陆方面，应用 Redis 对卖家的登录信息进行 Session 集中管理。<br/><br/>
 
 项目收获：掌握了一个中小型的企业项目从零到一的整个开发过程，Spring Boot和Spring Data JPA的应用实践，各种开发工具的使用，
-微信公众平台开发文档的使用以及微信开发接口的使用，Redis、分布式系统的一些特征等新知识的实践，一些开源项目、SDK的使用。<br/><br/>
+微信官方文档以及微信开发接口的使用，Redis、分布式系统的一些特征等新知识的实践，一些开源项目、SDK的使用。<br/><br/>
 项目地址：<a href="https://github.com/sqmax/springboot-project">https://github.com/sqmax/springboot-project</a></dd>
 
 <dt>车辆相关的项目</dt>
 <dd><em>公司项目</em>
 <strong>2018.05 - 2018.07</strong>
-职位：后端PG   &nbsp;&nbsp;项目组：10人<br/>
+职位：后端PG   &nbsp;&nbsp;项目组：10人<br/><br/>
 
-一个从日本富士通外包来的大型的车辆管理项目，使用 Spring、MyBatis、Spring Batch 框架，Oracle 数据库。<br/><br/>
+1、一个从日本富士通外包来的大型的车辆管理项目，使用 Spring、MyBatis、Spring Batch 框架，Oracle 数据库。<br/><br/>
 
-我负责项目组长分配的业务模块，进行编码、单元测试和检证资料的编写。<br/><br/>
+2、我负责项目组长分配的业务模块，进行编码、单元测试和检证资料的编写。<br/><br/>
 
-使用 Git 进行项目管理，我也熟练地掌握了使用 Git 进行团队合作。<br/><br/>
+3、使用 Git 进行项目管理，我也熟练地掌握了使用 Git 进行团队合作。<br/><br/>
 
 项目收获：对一个大型的系统，各人负责不同的业务代码，进行团队合作开发，项目使用Git作为版本管理系统，熟练地掌握了使用Git进行团队合作。</dd>
 
@@ -703,9 +700,11 @@ dl em {
 <dd><em>毕业设计项目</em>
 <strong>2017.03-2017.06</strong>
 
-独立开发的一个 Android 应用，并发布到了腾讯应用商店。<br/><br/>
-包括水准测量和导线测量两个功能模块的实现。<br/><br/>
-获得河南理工大学测绘学院校级优秀论文。<br/><br/>
+1、独立开发的一个 Android 应用，并发布到了腾讯应用商店。<br/><br/>
+
+2、包括水准测量和导线测量两个功能模块的实现。<br/><br/>
+
+3、获得河南理工大学测绘学院校级优秀论文。<br/><br/>
 
 项目地址：<a href="https://github.com/sqmax/SurvingAndMapping">https://github.com/sqmax/SurvingAndMapping</a></dd>
 </dl>
@@ -730,7 +729,7 @@ dl em {
 <dl>
 <!--<dt>个人</dt>-->
 <dd>
-1. 熟练使用 C 语言，熟悉常用的数据结构。浙江大学 2017 年 12 月 PAT 甲级 64 分，C++提交。<br/><br/>
+1. 熟练使用 C 语言，熟悉常用的数据结构。浙江大学 PAT 甲级 64 分，C++提交。<br/><br/>
 2. 能够阅读英文技术文档。两次六级考试分别获得阅读 200+和 220+的成绩。<br /><br/>
 3. 对 Java SE 中高级知识有良好的掌握，对Java虚拟机的知识有一些了解。<br/><br/>
 4. 熟悉 Java 后端开发常用框架，包括 Spring，SpringMVC，Spring Boot，MyBatis等<br /><br/>
